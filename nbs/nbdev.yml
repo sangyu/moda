@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "moda"
+  site-url: "https://ACCLAB.github.io/moda"
+  description: "Third attempt to set up repo for nbdev version of the Modern Data Analysis course"
+  repo-branch: main
+  repo-url: "https://github.com/ACCLAB/moda"
