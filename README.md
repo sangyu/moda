@@ -25,3 +25,4 @@ Some example analyses with jupyter notebook
 
 [DABEST
 Introduction](https://github.com/sangyu/moda/blob/main/nbs/04_Dabest_introduction.ipynb)
+An optional tutorial on our python package for estimation statistics
