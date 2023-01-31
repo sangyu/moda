@@ -5,4 +5,4 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://ACCLAB.github.io',
                 'git_url': 'https://github.com/ACCLAB/moda',
                 'lib_path': 'moda'},
-  'syms': {'moda.core': {'moda.core.foo': ('core.html#foo', 'moda/core.py')}, 'moda.moda': {}}}
+  'syms': {'moda.moda': {}}}
