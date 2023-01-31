@@ -2,4 +2,7 @@ website:
   sidebar:
     contents:
       - index.ipynb
-      - 00_core.ipynb
+      - 01_Introduction.ipynb
+      - 02_Quick_tour_of_the_Notebook.ipynb
+      - 03_Data_Analysis_with_Jupyter.ipynb
+      - 04_Dabest_introduction.ipynb
