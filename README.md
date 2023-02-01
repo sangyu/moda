@@ -15,7 +15,7 @@ Duke-NUS Medical School
 The goal of this class is to introduce biomedical scientists to data
 analysis with Python notebooks. There are two parts to the session: a
 lecture on the key issues in data analysis and a hands-on tutorial.
-Please do the following preparations before class.
+Please prepare for class as follows:
 
 1.  Read the
     [Introduction](https://github.com/sangyu/moda/blob/main/nbs/01_Introduction.ipynb)
@@ -29,4 +29,4 @@ Please do the following preparations before class.
 
 If we have more time in class, you will also be introduced to our
 estimation statistics package [DABEST
-Introduction](https://github.com/sangyu/moda/blob/main/nbs/04_Dabest_introduction.ipynb)
+Introduction](https://github.com/sangyu/moda/blob/main/nbs/04_Dabest_introduction.ipynb).
