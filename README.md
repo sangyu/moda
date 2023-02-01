@@ -30,5 +30,3 @@ Please do the following preparations before class.
 If we have more time in class, you will also be introduced to our
 estimation statistics package [DABEST
 Introduction](https://github.com/sangyu/moda/blob/main/nbs/04_Dabest_introduction.ipynb)
-
-<img src="sharedcontrolcontrast.png" alt="clone repository" width="700"/>
