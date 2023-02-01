@@ -3,6 +3,6 @@ website:
     contents:
       - index.ipynb
       - 01_Introduction.ipynb
-      - 02_Quick_tour_of_the_Notebook.ipynb
-      - 03_Data_Analysis_with_Jupyter.ipynb
+      - 02_Quick_Tour_of_the_Notebook.ipynb
+      - 03_Data_Analysis_with_Jupyter_and_Python.ipynb
       - 04_Dabest_introduction.ipynb
