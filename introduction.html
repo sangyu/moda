@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>moda - 01. Introduction</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="moda - 01. Introduction">
+<meta property="og:description" content="As research techniques and data collection have become almost completely digital and analysis methods grow more sophisticated, it is critical that scientists develop three skills: data…">
+<meta property="og:site-name" content="moda">
+<meta name="twitter:title" content="moda - 01. Introduction">
+<meta name="twitter:description" content="As research techniques and data collection have become almost completely digital and analysis methods grow more sophisticated, it is critical that scientists develop three skills: data…">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">moda</span>
+    </a>
+  </div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">01. Introduction</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Modern Data Analysis</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link active">01. Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quick_tour_of_the_notebook.html" class="sidebar-item-text sidebar-link">02. A Quick Tour of The Notebook</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_analysis_with_jupyter_and_python.html" class="sidebar-item-text sidebar-link">03. Data Analysis with Jupyter and Python</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dabest_introduction.html" class="sidebar-item-text sidebar-link">04. DABEST Introduction</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#before-class" id="toc-before-class" class="nav-link active" data-scroll-target="#before-class">Before class</a></li>
+  <li><a href="#in-class" id="toc-in-class" class="nav-link" data-scroll-target="#in-class">In class</a></li>
+  <li><a href="#further-practice-and-resources" id="toc-further-practice-and-resources" class="nav-link" data-scroll-target="#further-practice-and-resources">Further practice and resources</a>
+  <ul class="collapse">
+  <li><a href="#key-resources" id="toc-key-resources" class="nav-link" data-scroll-target="#key-resources"><em>Key resources</em></a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources"><em>Additional resources</em></a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ACCLAB/moda/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">01. Introduction</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<!-- WARNING: THIS FILE WAS AUTOGENERATED! DO NOT EDIT! -->
+<p>As research techniques and data collection have become almost completely digital and analysis methods grow more sophisticated, it is critical that scientists develop three skills: data visualization, statistics, and coding. Unfortunately, many undergraduate biology programs emphasize the memorization of numerous facts, while failing to offer courses in data graphics, estimation statistics, or scientific programming. In this session, we offer a basic orientation on these topics.</p>
+<section id="before-class" class="level2">
+<h2 class="anchored" data-anchor-id="before-class">Before class</h2>
+<p><em>If any issues can’t be resolved with the below steps, we can work on it in the class together.</em></p>
+<ol type="1">
+<li><p>You’ll need to get set up with a <a href="https://en.wikipedia.org/wiki/Version_control">version-control</a> system. Go to <a href="https://github.com/">GitHub</a> and get an account. Download and install <a href="https://desktop.github.com/">GitHub Desktop</a>.</p></li>
+<li><p>Retrieve the course materials from GitHub. Go to the course repository (“repo”) at https://github.com/ACCLAB/moda. Click the green <mark style="background-color: lightgreen">Code</mark> button and then select <mark style="background-color: lightgray">Open with GitHub Desktop</mark>.<img src="images/clonemoda.png" alt="clonemoda.png" width="600"> You will be prompted to select a directory for the local repository. If you are using a PC it can be something like this: <br><img src="images/clonedir.png" alt="clonedir.png" width="500"> <br>If you are using a mac, it can be something like “//Users/YOURUSERNAME/Documents/GitHub/moda”.</p></li>
+<li><p>To get set up with Python and <a href="https://en.wikipedia.org/wiki/Project_Jupyter">Jupyter</a> notebooks, install the <a href="https://www.anaconda.com/download/">Anaconda Distribution</a> on your laptop.</p></li>
+<li><p>Open Anaconda Navigator and launch <a href="https://jupyterlab.readthedocs.io/en/stable/user/interface.html">JupyterLab</a> by clicking on it.<img src="images/launchjupyterlab.png" alt="launchjupyterlab.png" width="600">JupyterLab will open in a browser tab.</p></li>
+<li><p>In the File Browser panel in JupyterLab, navigate to the folder where you cloned the course repo (refer to step 2). Double click on ‘nbs’. You should see a list of notebook files. Open “02_Quick_tour_of_the_Notebook.ipynb” by double-clicking on the icon shown in the JupyterLab browser window.<img src="images/opennotebook.png" alt="opennotebook.png" width="600"></p></li>
+<li><p>Work through the notebook. Familiarize yourself with basic Python, and with working in the JupyterLab environment.</p></li>
+<li><p>Read about <a href="https://pandas.pydata.org/">pandas</a>, <a href="https://matplotlib.org/">matplotlib</a>, and <a href="https://seaborn.pydata.org/">seaborn</a>.</p></li>
+<li><p>Read our papers on estimation statistics <a href="https://zenodo.org/record/60156">here</a> and <a href="https://doi.org/10.1101/377978">here</a>.</p></li>
+</ol>
+</section>
+<section id="in-class" class="level2">
+<h2 class="anchored" data-anchor-id="in-class">In class</h2>
+<ol start="10" type="1">
+<li><p>An overview of data analysis.</p></li>
+<li><p>A tour of the estimationstats web app.</p></li>
+<li><p>Presentation of a Jupyter <a href="https://drive.google.com/file/d/1o4Ou2fHY73l6Nb7MUp2GqwtrJbcQ80Ix/view?usp=sharing">notebook</a> that introduces techniques in data analysis using Python.</p></li>
+<li><p>Try JupyterLite, an experimental web version of JupyterLab, with a class notebook <a href="https://sangyu.github.io/Evidence-Session/lab?path=Notebooks%2F01.+Data+Analysis+with+Jupyter+and+Python.ipynb">here</a>.</p></li>
+</ol>
+</section>
+<section id="further-practice-and-resources" class="level2">
+<h2 class="anchored" data-anchor-id="further-practice-and-resources">Further practice and resources</h2>
+<p>Try using the <a href="https://www.estimationstats.com/#/">estimationstats.com</a> web app to analyze your own grouped data.</p>
+<p>Open and have a look at the sample multivariate <a href="https://docs.google.com/spreadsheets/d/1F0c5I_S9_NnLKPMQxJkEfzGfhzQeR26SgkiHSTFwKDE/edit?usp=sharing">data</a>. Go through the <a href="https://drive.google.com/file/d/1m_l4k5ZaUc03hpvcfBd_Riy2nXYDpFXg/view?usp=sharing">introductory notebook</a> that demonstrates data analysis.</p>
+<p>We recommend the following texts to strengthen your data-analysis and presentation skills. They can be dipped into over the coming months or years, and used as references. Being familiar with some or all of this material will help you write your first-author paper/s and doctoral thesis.</p>
+<section id="key-resources" class="level3">
+<h3 class="anchored" data-anchor-id="key-resources"><em>Key resources</em></h3>
+<ul>
+<li><p>Estimation: Our <a href="https://www.estimationstats.com/#/background">estimationstats.com</a> site has introductory information on estimation and specific types of <a href="https://www.estimationstats.com/#/user-guide/two-independent-groups">analyses</a> and <a href="https://www.estimationstats.com/#/about-effect-sizes">effect sizes</a>.</p></li>
+<li><p>Datavis: Claus Wilke’s free online <a href="https://clauswilke.com/dataviz/index.html">book</a> is a great introduction to data visualization, and a style guide. It is written in R, which is the best language for statistics.</p></li>
+<li><p>Coding: There are many online resources to learn coding. Published in 2021, <a href="https://dcic-world.org/">A Data-Centric Introduction to Computing</a> uses a Python-like teaching language (<a href="https://www.pyret.org/">Pyret</a>) to introduce key concepts in computer science.</p></li>
+</ul>
+</section>
+<section id="additional-resources" class="level3">
+<h3 class="anchored" data-anchor-id="additional-resources"><em>Additional resources</em></h3>
+<section id="some-are-free-some-you-will-need-to-buy-or-borrow-from-the-library." class="level4">
+<h4 class="anchored" data-anchor-id="some-are-free-some-you-will-need-to-buy-or-borrow-from-the-library."><em>Some are free, some you will need to buy or borrow from the library.</em></h4>
+<ul>
+<li><p>Estimation: If you want to learn about estimation statistics in greater depth, there is Calin-Jageman and Cumming’s <a href="http://thenewstatistics.com/itns/">textbook</a> that is well-written, funny, and clear. The authors also run a <a href="https://thenewstatistics.com/itns/">blog</a>.</p></li>
+<li><p>Estimation: Christoph Bernard’s account of the pioneering experience of a major journal (<em>eNeuro</em>) recommending estimation as standard: the <a href="https://www.eneuro.org/content/6/4/ENEURO.0259-19.2019">initial announcement</a>, <a href="https://blog.eneuro.org/2021/02/discussion-est-stats-author-feedback">author feedback</a>, and <a href="https://www.eneuro.org/content/8/2/ENEURO.0091-21.2021">after one year</a>.</p></li>
+<li><p>Coding: The paid coding tutorial <a href="https://learncodethehardway.org/python/">Learn Python The Hard Way</a> has a good reputation, but there are also many free options (see <a href="https://dcic-world.org/">DCIC</a> above) with great reviews.</p></li>
+<li><p>Coding: It will help to learn to use your computer’s <a href="https://youtu.be/tc4ROCJYbm0">Unix-style</a> command-line <a href="https://en.wikipedia.org/wiki/Unix_shell">shell</a>. This interface will allow you to use package managers like <a href="https://docs.conda.io/en/latest/">conda</a> and <a href="https://brew.sh/">homebrew</a>, version-control tools like <a href="https://git-scm.com/">git</a>, and other important tools. There are many <a href="https://www.linuxcommand.org/index.php">books</a> about the shell, with only minor differences between MacOS, <a href="https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/">Windows</a>, and Linux.</p></li>
+<li><p>Datavis: A brief guide to oral–visual data presentations (<a href="http://www.howtogiveatalk.com/">talks</a>).</p></li>
+<li><p>Datavis: A reader-funded textbook on <a href="http://practicaltypography.com/presentations.html">typography</a>, including for slides. Since so much communication relies on text, typography is an important part of the data interface.</p></li>
+<li><p>Datavis: For historical perspectives, Edward Tufte’s <a href="https://www.edwardtufte.com/tufte/">books</a> are classic texts to develop your design skills, and there is Friendly and Wainer’s <a href="https://friendly.github.io/HistDataVis/">History of Data Visualization</a>.</p></li>
+<li><p>As you progress, you will want to develop your skills in areas like bioinformatics, image processing, and/or machine learning. The iris dataset is widely used for training in multivariate data analysis, with many online tutorials.</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>The social reasons to learn programming also <span class="bu">apply</span> to research programming.</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>iframe width<span class="op">=</span><span class="st">"600"</span> height<span class="op">=</span><span class="st">"400"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>src<span class="op">=</span><span class="st">"https://www.youtube.com/embed/kgicuytCkoY"</span><span class="op">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;/</span>iframe<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+The social reasons to learn programming also apply to research programming.
+<iframe width="600" height="400" src="https://www.youtube.com/embed/kgicuytCkoY">
+</iframe>
+</div>
+</div>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
